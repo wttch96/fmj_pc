@@ -65,8 +65,7 @@ public class GameView extends JFrame implements Runnable{
 		
 		gameView.mKeepRunning = true;
 		new Thread(gameView, "logic update").start();
-		
-		
+
 		
 		//gameView.mKeepRunning  = false;
 	}
@@ -166,7 +165,7 @@ public class GameView extends JFrame implements Runnable{
 			try {
 				Thread.sleep(Global.TIME_GAMELOOP);
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
+				// TODO Auto-generated catch block;
 				e.printStackTrace();
 			}
 		}

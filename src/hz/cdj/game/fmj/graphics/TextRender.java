@@ -52,6 +52,7 @@ public class TextRender {
 	
 	public static void drawText(Canvas canvas, String text, int x, int y) {
 		try {
+			System.out.println(text);
 			drawText(canvas, text.getBytes("GBK"), x, y);
 		} catch (UnsupportedEncodingException e) {
 			e.printStackTrace();

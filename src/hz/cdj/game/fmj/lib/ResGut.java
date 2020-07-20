@@ -31,6 +31,7 @@ public class ResGut extends ResBase {
 		mType = buf[offset];
 		mIndex = buf[offset + 1];
 		mDescription = getString(buf, offset + 2);
+		System.out.println(mDescription);
 		mLength = (((int) buf[offset + 0x19] & 0xFF) << 8)
 				| ((int) buf[offset + 0x18] & 0xFF);
 		mNumSceneEvent = (int) buf[offset + 0x1a] & 0xFF;
